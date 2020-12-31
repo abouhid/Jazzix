@@ -1,10 +1,13 @@
 import '../App.css';
+import Search from '../components/Search';
+import HotDeals from '../components/HotDeals';
 
 function mainPage() {
   return (
-    <div className="mainPage">
-      <h3>TEST</h3>
-    </div>
+    <>
+      <Search />
+      <HotDeals />
+    </>
   );
 }
 
