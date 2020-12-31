@@ -3,7 +3,7 @@ export default [
     id: 0,
     icon: 'fas fa-drum',
     name: 'Drum Kits',
-    description: '(Drums , cymbals, racks and much more)',
+    description: '(Drums, cymbals, racks and much more)',
     instruments: [
       {
         id: 0,

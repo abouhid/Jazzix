@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Context } from '../../Context';
+import { Context } from '../Context';
 
-const Guitars = props => {
+const Instruments = props => {
   const { storedata } = useContext(Context);
   const list = storedata[props.id].instruments.map(product => (
     <li key={product.id}>
@@ -14,7 +14,7 @@ const Guitars = props => {
           <h4 className="font-weight-bold fs2"><span>{product.name}</span></h4>
           <h5 className="red fs2">{product.state}</h5>
           <h5 className="fs2">
-            <strong>Froom:</strong>
+            <strong>From: </strong>
             {product.from}
           </h5>
 
@@ -51,4 +51,4 @@ const Guitars = props => {
     [list]
   );
 };
-export default Guitars;
+export default Instruments;
