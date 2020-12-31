@@ -6,11 +6,14 @@ function Header() {
     <nav className="w-100 d-flex justify-content-between">
       <ul className="d-flex justify-content-between m-0 w-100 align-items-center nav-left">
         <li>
-          <div className="fs3 text-light">
-            <i className="fa fa-guitar red" />
-            JAZZIX
-          </div>
+          <Link to="/">
+            <div className="fs3 text-light">
+              <i className="fa fa-guitar red" />
+              JAZZIX
+            </div>
+          </Link>
         </li>
+
         <Link to="/">
           <li><div><i className="fa fa-home red"> HOME</i></div></li>
         </Link>

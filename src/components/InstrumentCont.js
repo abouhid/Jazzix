@@ -18,9 +18,6 @@ function InstrumentCont() {
       <hr className="bg-grey mt-0" />
       <ul className="products">
         <Drums />
-        <Drums />
-        <Drums />
-        <Drums />
       </ul>
 
     </>
