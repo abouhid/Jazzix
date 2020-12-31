@@ -1,37 +1,32 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context';
 
-// import storedata from '../data/storedata'
 function InstrumentCont() {
-  const { allPhotos } = useContext(Context);
+  const { storedata } = useContext(Context);
   return (
     <>
       <div className="d-flex align-items-baseline m-0">
         <h4 className="mt4 dark font-weight-bold fs3 title">
           <i className="fas fa-drum" />
-          {' '}
-          Drum kits
+          {storedata[0].name}
         </h4>
         <p className="mt4 ml-4 grey font-weight-bold m-0 fs2">
-          (
-          {allPhotos}
-          , cymbals, racks and much more)
+          {storedata[0].description}
         </p>
       </div>
       <hr className="bg-grey mt-0" />
       <ul className="products">
         <li>
           <img
-            src="https://gloimg.gbtcdn.com/images/pdm-product-pic/Electronic/2019/05/10/source-img/20190510143637_37273.jpg_100x100.jpg"
+            src={storedata[0].instrument.img}
             alt="product"
           />
           <div>
-            <h4 className="font-weight-bold fs2"><span>SLADE 14 inch Snare Drum with Stick Strap Wrench - Red Wine 4</span></h4>
-            <h5 className="red fs2">New</h5>
+            <h4 className="font-weight-bold fs2"><span>{storedata[0].instrument.name}</span></h4>
+            <h5 className="red fs2">{storedata[0].instrument.state}</h5>
             <h5 className="fs2">
               <strong>From:</strong>
-              {' '}
-              Juiz de Fora, Brazil
+              {storedata[0].instrument.from}
             </h5>
 
             <div className="d-flex justify-content-between align-items-center">
@@ -52,8 +47,10 @@ function InstrumentCont() {
                 </div>
               </div>
               <h4 className="red font-weight-bold fs3 m-0">
-                {' '}
-                <span className="red">$57.93</span>
+                <span className="red">
+                  $
+                  {storedata[0].instrument.price}
+                </span>
               </h4>
             </div>
           </div>
@@ -68,7 +65,6 @@ function InstrumentCont() {
             <h5 className="red fs2">Used</h5>
             <h5 className="fs2">
               <strong>From:</strong>
-              {' '}
               Além Paraíba, Brazil
             </h5>
 
@@ -90,7 +86,6 @@ function InstrumentCont() {
                 </div>
               </div>
               <h4 className="red font-weight-bold fs3 m-0">
-                {' '}
                 <span className="red">$37.99</span>
               </h4>
             </div>
@@ -106,7 +101,6 @@ function InstrumentCont() {
             <h5 className="red fs2">New</h5>
             <h5 className="fs2">
               <strong>From:</strong>
-              {' '}
               Rio de Janeiro, Brazil
             </h5>
 
@@ -129,7 +123,6 @@ function InstrumentCont() {
               </div>
 
               <h4 className="red font-weight-bold fs3 m-0">
-                {' '}
                 <span className="red">$349.99</span>
               </h4>
             </div>
@@ -145,7 +138,6 @@ function InstrumentCont() {
             <h5 className="red fs2">New</h5>
             <h5 className="fs2">
               <strong>From:</strong>
-              {' '}
               Juiz de Fora, Brazil
             </h5>
 
@@ -167,7 +159,6 @@ function InstrumentCont() {
                 </div>
               </div>
               <h4 className="red font-weight-bold fs3 m-0">
-                {' '}
                 <span className="red">$319.99</span>
               </h4>
             </div>
