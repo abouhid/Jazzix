@@ -1,5 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 import Details from './pages/SearchPage';
 
@@ -15,6 +16,7 @@ function App() {
           <Details />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

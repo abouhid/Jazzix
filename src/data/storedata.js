@@ -1,6 +1,7 @@
 export default [
   {
     id: 0,
+    icon: 'fas fa-drum',
     name: 'Drum Kits',
     description: '(Drums , cymbals, racks and much more)',
     instruments: [
@@ -40,6 +41,7 @@ export default [
   },
   {
     id: 1,
+    icon: 'fas fa-guitar',
     name: 'Guitars',
     description: '(Acoustic and electric guitars)',
     instruments: [
@@ -79,6 +81,7 @@ export default [
   },
   {
     id: 2,
+    icon: 'fas fa-columns',
     name: 'Pianos',
     description: '(Pianos and Musical Keyboards)',
     instruments: [
@@ -118,6 +121,7 @@ export default [
   },
   {
     id: 3,
+    icon: 'fas fa-sleigh',
     name: 'Trumpets',
     description: '(All types of trumpets.)',
     instruments: [

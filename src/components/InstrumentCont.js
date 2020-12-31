@@ -19,7 +19,7 @@ function InstrumentCont() {
       case 3:
         return <Trumpets id={id} />;
       default:
-        return console.log(`Sorry, we are out of ${id}.`);
+        return <Drums id={id} />;
     }
   };
 
@@ -27,7 +27,7 @@ function InstrumentCont() {
     <React.Fragment key={el.id}>
       <div className="d-flex align-items-baseline m-0">
         <h4 className="mt4 dark font-weight-bold fs3 title">
-          <i className="fas fa-drum" />
+          <i className={el.icon} />
           {storedata[el.id].name}
         </h4>
         <p className="mt4 ml-4 grey font-weight-bold m-0 fs2">

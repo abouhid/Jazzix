@@ -142,7 +142,7 @@ nav {
   z-index: 99;
 }
 
-h5 {
+h5,span {
   cursor: pointer;
 }
 
@@ -276,7 +276,7 @@ nav a,
   padding: 3%;
 }
 
-.left-footer a {
+.left-footer span {
   font-size: 5vw;
 }
 
