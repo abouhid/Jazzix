@@ -1,4 +1,4 @@
-import { Link, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import MainPage from './pages/MainPage';
 import Details from './pages/SearchPage';
@@ -6,7 +6,7 @@ import Details from './pages/SearchPage';
 function App() {
   return (
     <div className="App">
-     <Header/>
+      <Header />
       <Switch>
         <Route exact path="/">
           <MainPage />

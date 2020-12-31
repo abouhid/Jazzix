@@ -92,7 +92,7 @@ video {
 @font-face {
   font-family: "helvetica-neue";
   font-display: swap;
-  src: local("helvetica_neue"), url(./fonts/HelveticaNeue-Medium.ttf) format("truetype");
+  src: local("helvetica_neue"), url(../styles/fonts/HelveticaNeue-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -100,7 +100,7 @@ video {
 @font-face {
   font-family: "helvetica-light";
   font-display: swap;
-  src: local("helvetica_neue_light"), url(./fonts/HelveticaNeue-Light.otf) format("opentype");
+  src: local("helvetica_neue_light"), url(../styles/fonts/HelveticaNeue-Light.otf) format("opentype");
   font-weight: 500;
   font-style: normal;
 }
@@ -108,7 +108,7 @@ video {
 @font-face {
   font-family: "helvetica-bold";
   font-display: swap;
-  src: local("helvetica_neue_bold"), url(./fonts/HelveticaNeue-Bold.ttf) format("truetype");
+  src: local("helvetica_neue_bold"), url(../styles/fonts/HelveticaNeue-Bold.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -142,10 +142,6 @@ nav {
   z-index: 99;
 }
 
-h5 {
-  cursor: pointer;
-}
-
 nav a,
 .grey {
   color: #888;
@@ -164,16 +160,16 @@ nav a,
 }
 
 .p5 {
-  padding: 5%;
+  padding: 2%;
 }
 
 .mt4 {
   margin-top: 4vw;
 }
 
-.p5 h1 {
-  font-size: 8vw;
-  margin: 3vw auto;
+.p5 h3 {
+  font-size: 5vw;
+  margin-top: 45px;
 }
 
 .fs3 {
@@ -185,10 +181,9 @@ nav a,
   background-image: linear-gradient(rgb(211, 82, 102, 0.5) 60%, rgb(56, 56, 56)), url(https://cdn2.vectorstock.com/i/1000x1000/50/61/jazz-seamless-background-vector-1445061.jpg);
 }
 
-.header h1,
+.header h3,
 .header h4 {
   text-shadow: 2px 2px #383838;
-  font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
 }
 
 .header li > * {
@@ -196,74 +191,85 @@ nav a,
   min-width: 15px;
 }
 
-.size button {
-  font-size: 2vw;
-}
-
 .fs2 {
   font-size: 2vw;
   font-family: "helvetica-light", Arial, Helvetica, sans-serif;
 }
 
-.hotdeals {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+.float-left {
+  height: auto;
 }
 
-.img1 {
-  background-image: linear-gradient(to bottom, transparent, black), url(https://http2.mlstatic.com/guitarra-gibson-traditional-les-paul-premium-plus-wine-red-D_NQ_NP_711687-MLB42319823910_062020-F.webp);
+.size button {
+  font-size: 2vw;
 }
 
-.img2 {
-  background-image: linear-gradient(to bottom, transparent, black), url(https://gloimg.gbtcdn.com/storage/item/6538088194642685952/15607/f6f43ac93373.jpg_100x100.jpg);
-}
-
-.img3 {
-  background-image: linear-gradient(to bottom, transparent, black), url(https://media.musiciansfriend.com/is/image/MMGS7/MU75BK-Concert-Ukulele-Black/H79198000001000-00-220x220.jpg);
-}
-
-.f-right h4,
-.f-right h5,
-.f-right h6 {
+.float-right h4,
+.float-right h5,
+.float-right h6 {
   margin-bottom: 1vh;
 }
 
-.carousel-inner {
-  padding: 0 5%;
+.brands {
+  margin: 15px;
+}
+
+.filterTitle {
+  font-size: 4vw;
+}
+
+.list-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1vw;
+}
+
+.list-filters li {
+  display: flex;
+  font-size: 2vw;
+  width: fit-content;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  width: 2vw;
+}
+
+.list-filters label {
+  margin-bottom: 0;
+}
+
+.list-filters a {
+  color: black;
+  margin-left: 5px;
 }
 
 .adsBut button {
-  padding: 7px;
+  padding: 2% 3%;
   background-color: #d35266;
   border: none;
   color: white;
   margin-top: 2vw;
-  white-space: nowrap;
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 1vw;
+  display: flex;
+  flex-direction: column;
   color: #888;
 }
 
 .products img {
-  width: 75%;
-  align-self: center;
-  padding: 6%;
   cursor: pointer;
   max-height: 50%;
+  width: 33%;
+  align-self: center;
+  padding: 2%;
 }
 
 .products li {
   border: 1px solid #d35266;
   border-radius: 3px;
-  margin: auto 10px;
+  margin: 10px;
   padding: 2% 8%;
   display: flex;
   flex-direction: column;
@@ -322,10 +328,6 @@ nav a,
     font-size: 16px;
   }
 
-  .products {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-  }
-
   .products h4 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -337,49 +339,38 @@ nav a,
   .listProd .title {
     font-size: 36px;
   }
-}
 
-@media screen and (max-width: 424px) {
-  .fs3 {
-    font-size: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  .brands {
+    position: sticky;
+    top: 65px;
   }
 
-  .fs2 {
-    font-size: 13px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  .filterTitle {
+    font-size: 20px;
   }
 
-  .left-footer p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
+  .list-filters {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
   }
 
-  .adsBut button {
-    font-size: 3vw;
-  }
-
-  nav ul li {
-    font-size: 8px;
-  }
-
-  nav ul li:last-child {
-    display: none;
+  .list-filters li {
+    display: flex;
+    font-size: 1.5vw;
+    width: fit-content;
+    align-items: center;
   }
 }
 
 @media screen and (min-width: 1441px) {
+  .nav-right {
+    display: flex;
+    width: fit-content;
+    padding: 0 20px;
+    white-space: nowrap;
+  }
+
   .fs3 {
     font-size: 20px;
     overflow: hidden;
@@ -399,6 +390,50 @@ nav a,
   }
 
   nav ul li {
-    font-size: 20px;
+    font-size: 30px;
+  }
+
+  .p5 h3 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .fs3 {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .fs2 {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .left-footer p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
+
+  nav ul li {
+    font-size: 8px;
+  }
+
+  .list-filters li {
+    font-size: 10px;
+  }
+
+  nav ul li:last-child {
+    display: none;
   }
 }
