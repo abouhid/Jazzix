@@ -1,15 +1,15 @@
 import { Link, Switch, Route } from 'react-router-dom';
-import mainPage from './pages/mainPage';
-import Details from './pages/search';
+import Header from './components/Header';
+import MainPage from './pages/MainPage';
+import Details from './pages/SearchPage';
 
 function App() {
   return (
     <div className="App">
-      <Link to="/"> Main</Link>
-      <Link to="/details"> Details</Link>
+     <Header/>
       <Switch>
         <Route exact path="/">
-          <mainPage />
+          <MainPage />
         </Route>
         <Route path="/details">
           <Details />
