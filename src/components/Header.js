@@ -21,7 +21,7 @@ function Header() {
           <li><div><i className="fa fa-home red"> HOME</i></div></li>
         </Link>
         <Link to="/wishlist">
-          <li>
+          <li className="wishlist">
             <div>
               <i className="fa fa-shopping-cart">
                 {' '}

@@ -185,7 +185,7 @@ nav a,
 }
 
 .p5 {
-  padding: 1%;
+  padding: 4% 1% 1% 1%;
 }
 
 .mt4 {
@@ -304,10 +304,6 @@ nav a,
   font-size: 5vw;
 }
 
-.nav-right {
-  display: none;
-}
-
 .footerGrid {
   display: inline-grid;
   grid-template-columns: auto auto auto;
@@ -339,27 +335,27 @@ nav a,
   text-align: end;
 }
 
+.nav-right {
+  display: flex;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.nav-right li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-left {
+  justify-content: space-around;
+}
+
+.nav-left li,
+.nav-left li button {
+  font-size: 14px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1440px) {
-  .nav-right {
-    display: flex;
-    padding: 0 20px;
-    white-space: nowrap;
-  }
-
-  .nav-right li {
-    margin-left: 20px;
-    cursor: pointer;
-  }
-
-  .nav-left {
-    justify-content: space-around;
-  }
-
-  .nav-left li,
-  .nav-left li button {
-    font-size: 14px;
-  }
-
   .fs3 {
     font-size: 18px;
   }
@@ -395,6 +391,11 @@ nav a,
     -webkit-box-orient: vertical;
   }
 
+  .wishlist {
+    display: none;
+  }
+
+
   .fs2 {
     font-size: 13px;
     overflow: hidden;
@@ -418,10 +419,6 @@ nav a,
 
   nav ul li {
     font-size: 8px;
-  }
-
-  nav ul li:last-child {
-    display: none;
   }
 }
 
