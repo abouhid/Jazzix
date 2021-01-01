@@ -163,8 +163,8 @@ span {
   background-color: #f8f8f8;
   color: black;
   font-size: 2vw;
-    min-width: 15px;
-    margin-left: .5rem;
+  min-width: 15px;
+  margin-left: 0.5rem;
 }
 
 nav a,
