@@ -66,6 +66,10 @@ const Cart = () => {
     )
     : <p>You have no items in your cart.</p>;
 
+  const ifWishlistElement = wishlistItems.length > 0
+    ? ''
+    : <p>You have no items in your wishlist.</p>;
+
   return (
     <main className="cart-page p-3">
       <Modal
@@ -89,7 +93,7 @@ const Cart = () => {
 
       </ul>
       {
-              isWishlist ? '' : ifCartElement
+              isWishlist ? ifWishlistElement : ifCartElement
 
             }
     </main>

@@ -1,4 +1,5 @@
 import '../App.css';
+import { Link } from 'react-router-dom';
 import MainSearch from '../components/MainSearch';
 
 function SearchPage() {
@@ -47,7 +48,9 @@ function SearchPage() {
             <input className="form-control ml-2 " type="search" placeholder="Start rocking!" aria-label="Search" />
 
           </li>
-          <li className="size"><a href="search_results.html" className="btn btn-light ml-2">Search</a></li>
+          <Link to="/search">
+            <li className="size"><span className="btn btn-light ml-2">Search</span></li>
+          </Link>
 
         </ul>
 

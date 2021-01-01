@@ -30,12 +30,6 @@ function Search() {
                     </h5>
                     <div className="d-flex adsBut fs3">
                       <button type="button">$450</button>
-                      <button type="button" className="border-left border-light">
-                        <i className="fas fa-shopping-cart" />
-                        {' '}
-                        Purchase
-                        details
-                      </button>
                     </div>
 
                   </div>
@@ -64,12 +58,6 @@ function Search() {
                     </h5>
                     <div className="d-flex adsBut fs3">
                       <button type="button">$450</button>
-                      <button type="button" className="border-left border-light">
-                        <i className="fas fa-shopping-cart" />
-                        {' '}
-                        Purchase
-                        details
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -94,12 +82,6 @@ function Search() {
                     </h5>
                     <div className="d-flex adsBut fs3">
                       <button type="button">$129.99</button>
-                      <button type="button" className="border-left border-light">
-                        <i className="fas fa-shopping-cart" />
-                        {' '}
-                        Purchase
-                        details
-                      </button>
                     </div>
                   </div>
                 </div>
