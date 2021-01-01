@@ -45,11 +45,11 @@ const Cart = () => {
     }, 1000);
   }
   const cartItemElements = cartItems.map((item, index) => (
-    <CartItem key={index.toString()} item={item} />
+    <CartItem key={index.toString()} item={item} isWishlist={isWishlist} id={index.toString()} />
   ));
 
   const wishlistElements = wishlistItems.map((item, index) => (
-    <CartItem key={index.toString()} item={item} />
+    <CartItem key={index.toString()} item={item} isWishlist={isWishlist} id={index.toString()} />
   ));
 
   const ifCartElement = cartItems.length > 0

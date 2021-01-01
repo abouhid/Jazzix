@@ -21,6 +21,10 @@ function App() {
           <Cart />
           <HotDeals />
         </Route>
+        <Route path="/info/:productId">
+          <Cart />
+          <HotDeals />
+        </Route>
       </Switch>
       <Footer />
     </div>

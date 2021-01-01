@@ -21,13 +21,23 @@ function ContextProvider({ children }) {
   };
 
   const removeFromCart = id => {
-    setCartItems(prevItems => prevItems.filter(item => item.id !== id));
+    console.log(id, cartItems);
+    setCartItems(prevItems => prevItems.filter((item, index) => index != id));
   };
-  // console.log(cartItems);
+  const removeFromWishlist = id => {
+    setWishlistItems(prevItems => prevItems.filter((item, index) => index != id));
+  };
 
   return (
     <Context.Provider value={{
-      allInstruments, cartItems, addToCart, emptyCart, removeFromCart, wishlistItems, addToWishlist,
+      allInstruments,
+      cartItems,
+      addToCart,
+      emptyCart,
+      removeFromCart,
+      wishlistItems,
+      addToWishlist,
+      removeFromWishlist,
     }}
     >
       {children}
