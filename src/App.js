@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
-import InstrumentCont from './components/InstrumentCont';
+import HotDeals from './components/HotDeals';
 
 function App() {
   return (
@@ -19,9 +19,9 @@ function App() {
         </Route>
         <Route path="/cart">
           <Cart />
+          <HotDeals />
         </Route>
       </Switch>
-      <InstrumentCont />
       <Footer />
     </div>
   );

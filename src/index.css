@@ -134,6 +134,18 @@ a {
   cursor: pointer;
 }
 
+.order {
+  color: white;
+  background-color: #d35266;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1%;
+}
+
+.App {
+  margin-top: 4%;
+}
+
 nav {
   height: fit-content;
   background-color: #383838;
@@ -143,6 +155,7 @@ nav {
   top: 0;
   font-size: 2vw;
   z-index: 99;
+  position: fixed;
 }
 
 h5,span {
@@ -300,7 +313,6 @@ nav a,
   border-radius: 3px;
   padding: 1%;
   margin: 10px 0;
-  width: 45%;
 }
 
 .cart-item img {

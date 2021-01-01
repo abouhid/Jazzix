@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import Modal from 'react-modal';
 import { Context } from '../Context';
-/*eslint-disable */
 import CartItem from '../components/CartItem';
+
 function Cart() {
   const [buttonText, setButtonText] = useState('Place Order');
   const { cartItems, emptyCart } = useContext(Context);
@@ -62,7 +62,10 @@ function Cart() {
         {' '}
         <i className="fa fa-shopping-cart"> YOUR CART</i>
       </h1>
-      {cartItemElements}
+      <ul>
+
+        {cartItemElements}
+      </ul>
       {
       cartItems.length > 0
         ? (
@@ -73,7 +76,7 @@ function Cart() {
             </p>
             <hr />
 
-            <button type="button" onClick={placeOrder}>{buttonText}</button>
+            <button type="button" className="order" onClick={placeOrder}>{buttonText}</button>
           </div>
         )
         : <p>You have no items in your cart.</p>

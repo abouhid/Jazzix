@@ -10,7 +10,7 @@ function CartItem({ item }) {
     : 'fas fa-trash-alt align-self-center pr-3 red pointer';
 
   return (
-    <div className="cart-item">
+    <li className="cart-item">
       <i
         className={iconClassName}
         onMouseEnter={() => setHovered(true)}
@@ -29,7 +29,7 @@ function CartItem({ item }) {
         <p className="item-price fs3 red">{item.price}</p>
         <hr />
       </div>
-    </div>
+    </li>
 
   );
 }
