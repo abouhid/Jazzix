@@ -22,7 +22,7 @@ function CartItem({ item, isWishlist, id }) {
           : removeFromCart(id))}
       />
 
-      <img src={item.img} alt="img" width="100px" />
+      <img src={item.img} alt="img" style={{ width: '100px', height: '130px', margin: '10px 15px 10px 0' }} />
       <div className="flex-column w-100">
         <h4>{item.name}</h4>
         <h5 className="red fs2">{item.state}</h5>
@@ -30,11 +30,10 @@ function CartItem({ item, isWishlist, id }) {
           <strong>From: </strong>
           {item.from}
         </h5>
-        <p className="item-price fs3 red">{item.price}</p>
 
         <div className="dropdown size m-0">
           <button
-            className="btn btn-light p-0"
+            className="btn   p-0"
             type="button"
             data-toggle="dropdown"
             aria-haspopup="true"
@@ -47,6 +46,7 @@ function CartItem({ item, isWishlist, id }) {
             <span aria-hidden="true" onClick={() => addToCart(item)} className="dropdown-item">Add to Cart</span>
           </div>
         </div>
+        <p className="item-price fs3 red">{item.price}</p>
 
         <hr />
       </div>

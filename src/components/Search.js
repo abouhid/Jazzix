@@ -11,7 +11,7 @@ function Search() {
         <ul className="d-flex justify-content-center mt-4">
           <li className="dropdown size">
             <button
-              className="btn btn-light dropdown-toggle"
+              className="btn   dropdown-toggle"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -29,7 +29,7 @@ function Search() {
           </li>
           <li className="dropdown size ml-1">
             <button
-              className="btn btn-light dropdown-toggle"
+              className="btn   dropdown-toggle"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -50,7 +50,7 @@ function Search() {
 
           </li>
           <Link to="/search">
-            <li className="size"><span className="btn btn-light ml-2">Search</span></li>
+            <li className="size"><span className="btn   ml-2">Search</span></li>
           </Link>
         </ul>
 

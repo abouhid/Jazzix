@@ -22,7 +22,7 @@ const Instruments = props => {
           <div className="d-flex justify-content-between align-items-center">
             <div className="dropdown size m-0">
               <button
-                className="btn btn-light p-0"
+                className="btn   p-0"
                 type="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"

@@ -16,7 +16,7 @@ const SearchItems = () => {
 
         <div className="d-flex justify-content-between align-items-center">
           <div className="dropdown size m-0">
-            <button className="btn btn-light p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button className="btn   p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i className="fas fa-plus-square red fs3 font-weight-bold" />
             </button>
             <div className="dropdown-menu border">
