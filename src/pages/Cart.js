@@ -3,6 +3,7 @@ import { useRouteMatch } from 'react-router-dom';
 import Modal from 'react-modal';
 import { Context } from '../Context';
 import CartItem from '../components/CartItem';
+/*eslint-disable */
 
 const Cart = () => {
   const { path } = useRouteMatch();
@@ -56,7 +57,8 @@ const Cart = () => {
     ? (
       <div className="order-button text-center">
         <p className="total-cost fs3 red">
-          Total:
+          Total: 
+          {' '}
           {totalCostDisplay}
         </p>
         <hr />
@@ -64,11 +66,11 @@ const Cart = () => {
         <button type="button" className="order" onClick={placeOrder}>{buttonText}</button>
       </div>
     )
-    : <p>You have no items in your cart.</p>;
+    : <p className='no-item'>You have no items in your cart.</p>;
 
   const ifWishlistElement = wishlistItems.length > 0
     ? ''
-    : <p>You have no items in your wishlist.</p>;
+    : <p className='no-item'>You have no items in your wishlist.</p>;
 
   return (
     <main className="cart-page p-3">
@@ -83,6 +85,7 @@ const Cart = () => {
         <h2>Thanks for Buying with Jazzix!</h2>
 
       </Modal>
+      
       <h1>
         {' '}
         {isWishlist ? <i className="fas fa-heart"> YOUR WISHLIST</i> : <i className="fa fa-shopping-cart"> YOUR CART</i>}

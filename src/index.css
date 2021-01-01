@@ -187,6 +187,10 @@ nav a,
   margin-top: 4vw;
 }
 
+.no-item {
+  margin-top: 2%;
+}
+
 .p5 h1 {
   font-size: 6vw;
   margin: 1vw auto;

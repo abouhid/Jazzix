@@ -33,7 +33,6 @@ const Instruments = props => {
               <div className="dropdown-menu border">
                 <span aria-hidden="true" onClick={() => addToWishlist(product)} className="dropdown-item">Add to Wishlist</span>
                 <span aria-hidden="true" onClick={() => addToCart(product)} className="dropdown-item">Add to Cart</span>
-                {/* <span className="dropdown-item">More Details</span> */}
               </div>
             </div>
             <h4 className="red font-weight-bold fs3 m-0">

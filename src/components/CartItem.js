@@ -4,7 +4,10 @@ import { Context } from '../Context';
 import '../index.css';
 
 function CartItem({ item, isWishlist, id }) {
-  const { removeFromCart, removeFromWishlist } = useContext(Context);
+  const {
+    removeFromCart, removeFromWishlist, addToCart, addToWishlist,
+  } = useContext(Context);
+
   const [hovered, setHovered] = useState(false);
   const iconClassName = hovered ? 'far fa-trash-alt align-self-center pr-3 red pointer'
     : 'fas fa-trash-alt align-self-center pr-3 red pointer';
@@ -28,6 +31,23 @@ function CartItem({ item, isWishlist, id }) {
           {item.from}
         </h5>
         <p className="item-price fs3 red">{item.price}</p>
+
+        <div className="dropdown size m-0">
+          <button
+            className="btn btn-light p-0"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i className="fas fa-plus red fs3 font-weight-bold" />
+          </button>
+          <div className="dropdown-menu border">
+            <span aria-hidden="true" onClick={() => addToWishlist(item)} className="dropdown-item">Add to Wishlist</span>
+            <span aria-hidden="true" onClick={() => addToCart(item)} className="dropdown-item">Add to Cart</span>
+          </div>
+        </div>
+
         <hr />
       </div>
     </li>
