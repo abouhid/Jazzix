@@ -1,8 +1,7 @@
-/* eslint-disable */
 import React, { useState, useContext } from 'react';
+import Modal from 'react-modal';
 import { Context } from '../Context';
 import CartItem from '../components/CartItem';
-import Modal from 'react-modal';
 
 function Cart() {
   const [buttonText, setButtonText] = useState('Place Order');
@@ -10,41 +9,36 @@ function Cart() {
   const totalCost = cartItems.map(prod => prod.price).reduce((a, b) => a + b, 0);
   const totalCostDisplay = totalCost.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   const customStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)',
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'flex-end',     
-    }
+      alignItems: 'flex-end',
+      color: '#d35266',
+    },
   };
-  let subtitle;
-  const [modalIsOpen,setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
   }
- 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = '#d35266';
-  }
- 
-  function closeModal(){
+
+  function closeModal() {
     setIsOpen(false);
   }
 
-  Modal.setAppElement('#root')
+  Modal.setAppElement('#root');
 
   function placeOrder() {
     setButtonText('Ordering...');
     setTimeout(() => {
       emptyCart();
       setButtonText('Place Order');
-      openModal()
+      openModal();
     }, 1000);
   }
   const cartItemElements = cartItems.map(item => (
@@ -55,17 +49,16 @@ function Cart() {
   return (
     <main className="cart-page p-3">
       <Modal
-          isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
-          onRequestClose={closeModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        >
- 
-          <span onClick={closeModal}>x</span>
-          <h2 ref={_subtitle => (subtitle = _subtitle)}>Thanks for Buying with Jazzix!</h2>
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
 
-        </Modal>
+        <span aria-hidden="true" onClick={closeModal}>x</span>
+        <h2>Thanks for Buying with Jazzix!</h2>
+
+      </Modal>
       <h1>
         {' '}
         <i className="fa fa-shopping-cart"> YOUR CART</i>
