@@ -1,13 +1,442 @@
-body {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "helvetica-neue";
+  src: local("helvetica_neue"), url(./fonts/HelveticaNeue-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica-light";
+  src: local("helvetica_neue_light"), url(./fonts/HelveticaNeue-Light.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica-bold";
+  src: local("helvetica_neue_bold"), url(./fonts/HelveticaNeue-Bold.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica-neue", Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.order {
+  color: white;
+  background-color: #d35266;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1%;
+}
+
+.App {
+  margin-top: 4%;
+}
+
+nav {
+  background-color: #383838;
+  text-align: center;
+  color: #888;
+  padding: 1%;
+  top: 0;
+  font-size: 2vw;
+  z-index: 99;
+  position: fixed;
+}
+
+h5,
+span {
+  cursor: pointer;
+}
+
+nav a,
+.grey {
+  color: #888;
+}
+
+.bg-grey {
+  background-color: #f8f8f8;
+}
+
+.red {
+  color: #d35266;
+}
+
+.bg-red {
+  background-color: #d35266;
+}
+
+.p5 {
+  padding: 1%;
+}
+
+.mt4 {
+  margin-top: 4vw;
+}
+
+.no-item {
+  margin-top: 2%;
+}
+
+.p5 h1 {
+  font-size: 6vw;
+  margin: 1vw auto;
+}
+
+.fs3 {
+  font-size: 3vw;
+}
+
+.header {
+  background-image: linear-gradient(rgb(211, 82, 102, 0.5) 60%, rgb(56, 56, 56)), url(https://cdn2.vectorstock.com/i/1000x1000/50/61/jazz-seamless-background-vector-1445061.jpg);
+}
+
+.header h1,
+.header h4 {
+  text-shadow: 2px 2px #383838;
+  font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
+}
+
+.header li > * {
+  font-size: 2vw;
+  min-width: 15px;
+}
+
+.size button {
+  font-size: 2vw;
+}
+
+.fs2 {
+  font-size: 2vw;
+  font-family: "helvetica-light", Arial, Helvetica, sans-serif;
+}
+
+.hotdeals {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://http2.mlstatic.com/guitarra-gibson-traditional-les-paul-premium-plus-wine-red-D_NQ_NP_711687-MLB42319823910_062020-F.webp);
+}
+
+.img2 {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://gloimg.gbtcdn.com/storage/item/6538088194642685952/15607/f6f43ac93373.jpg_100x100.jpg);
+}
+
+.img3 {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://media.musiciansfriend.com/is/image/MMGS7/MU75BK-Concert-Ukulele-Black/H79198000001000-00-220x220.jpg);
+}
+
+.f-right h4,
+.f-right h5,
+.f-right h6 {
+  margin-bottom: 1vh;
+}
+
+.carousel-inner {
+  padding: 0 5%;
+}
+
+.adsBut button {
+  padding: 7px;
+  background-color: #d35266;
+  border: none;
+  color: white;
+  margin-top: 2vw;
+  white-space: nowrap;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1vw;
+  color: #888;
+}
+
+.products img {
+  width: 75%;
+  align-self: center;
+  padding: 6%;
+  cursor: pointer;
+  max-height: 80%;
+}
+
+.products li {
+  border: 1px solid #d35266;
+  border-radius: 3px;
+  margin: auto 10px;
+  padding: 2% 8%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.left-footer {
+  padding: 3%;
+}
+
+.left-footer span {
+  font-size: 5vw;
+}
+
+.nav-right {
+  display: none;
+}
+
+.footerGrid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  border: 1px solid #d35266;
+  border-radius: 3px;
+  padding: 1%;
+  margin: 10px 0;
+}
+
+.cart-item img {
+  margin-right: 3%;
+}
+
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-price,
+.total-cost {
+  text-align: end;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .nav-right {
+    display: flex;
+    padding: 0 20px;
+    white-space: nowrap;
+  }
+
+  .nav-right li {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .nav-left {
+    justify-content: space-around;
+  }
+
+  .nav-left li,
+  .nav-left li button {
+    font-size: 14px;
+  }
+
+  .fs3 {
+    font-size: 18px;
+  }
+
+  .fs2 {
+    font-size: 16px;
+  }
+
+  .products {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .products h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .listProd .title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .fs3 {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .fs2 {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .left-footer p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
+
+  .adsBut button {
+    font-size: 3vw;
+  }
+
+  nav ul li {
+    font-size: 8px;
+  }
+
+  nav ul li:last-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .fs3 {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .fs2 {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  nav ul li {
+    font-size: 20px;
+  }
 }
