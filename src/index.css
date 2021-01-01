@@ -130,6 +130,10 @@ a {
   cursor: pointer;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 nav {
   height: fit-content;
   background-color: #383838;
@@ -307,6 +311,10 @@ nav a,
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.item-price, .total-cost{
+  text-align: end;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {

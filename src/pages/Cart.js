@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import Modal from 'react-modal';
 import { Context } from '../Context';
+/*eslint-disable */
 import CartItem from '../components/CartItem';
-
 function Cart() {
   const [buttonText, setButtonText] = useState('Place Order');
   const { cartItems, emptyCart } = useContext(Context);
@@ -42,7 +42,6 @@ function Cart() {
     }, 1000);
   }
   const cartItemElements = cartItems.map(item => (
-
     <CartItem key={item.id} item={item} />
   ));
 
@@ -67,11 +66,13 @@ function Cart() {
       {
       cartItems.length > 0
         ? (
-          <div className="order-button">
-            <p className="total-cost">
+          <div className="order-button text-center">
+            <p className="total-cost fs3 red">
               Total:
               {totalCostDisplay}
             </p>
+            <hr />
+
             <button type="button" onClick={placeOrder}>{buttonText}</button>
           </div>
         )
