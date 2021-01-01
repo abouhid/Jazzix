@@ -91,7 +91,6 @@ video {
 
 @font-face {
   font-family: "helvetica-neue";
-  font-display: swap;
   src: local("helvetica_neue"), url(./fonts/HelveticaNeue-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -99,7 +98,6 @@ video {
 
 @font-face {
   font-family: "helvetica-light";
-  font-display: swap;
   src: local("helvetica_neue_light"), url(./fonts/HelveticaNeue-Light.otf) format("opentype");
   font-weight: 500;
   font-style: normal;
@@ -107,7 +105,6 @@ video {
 
 @font-face {
   font-family: "helvetica-bold";
-  font-display: swap;
   src: local("helvetica_neue_bold"), url(./fonts/HelveticaNeue-Bold.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -147,7 +144,6 @@ a {
 }
 
 nav {
-  height: fit-content;
   background-color: #383838;
   text-align: center;
   color: #888;
@@ -158,7 +154,8 @@ nav {
   position: fixed;
 }
 
-h5,span {
+h5,
+span {
   cursor: pointer;
 }
 
@@ -329,14 +326,14 @@ nav a,
   align-items: center;
 }
 
-.item-price, .total-cost{
+.item-price,
+.total-cost {
   text-align: end;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .nav-right {
     display: flex;
-    width: fit-content;
     padding: 0 20px;
     white-space: nowrap;
   }
@@ -442,6 +439,4 @@ nav a,
   nav ul li {
     font-size: 20px;
   }
-
- 
 }

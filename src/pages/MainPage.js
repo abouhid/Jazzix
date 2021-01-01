@@ -1,4 +1,3 @@
-import '../App.css';
 import Search from '../components/Search';
 import HotDeals from '../components/HotDeals';
 import InstrumentCont from '../components/InstrumentCont';

@@ -1,4 +1,3 @@
-import '../App.css';
 import { Link } from 'react-router-dom';
 import MainSearch from '../components/MainSearch';
 
@@ -10,7 +9,7 @@ function SearchPage() {
         <ul className="d-flex m-1">
           <li className="dropdown size">
             <button
-              className="btn   dropdown-toggle"
+              className="btn bg-grey dropdown-toggle"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -28,7 +27,7 @@ function SearchPage() {
           </li>
           <li className="dropdown size ml-1">
             <button
-              className="btn   dropdown-toggle"
+              className="btn bg-grey dropdown-toggle"
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -49,7 +48,7 @@ function SearchPage() {
 
           </li>
           <Link to="/search">
-            <li className="size"><span className="btn   ml-2">Search</span></li>
+            <li className="size"><span className="btn bg-grey ml-2">Search</span></li>
           </Link>
 
         </ul>
