@@ -1,11 +1,9 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context';
-/* eslint-disable */
 
 const Instruments = props => {
   const { allInstruments, addToCart } = useContext(Context);
-  const instrumentType = props.id
- 
+
   const list = allInstruments[props.id].instruments.map(product => (
     <li key={product.id}>
       <>
@@ -24,7 +22,7 @@ const Instruments = props => {
           <div className="d-flex justify-content-between align-items-center">
             <div className="dropdown size m-0">
               <button
-                onClick={()=>addToCart(product)}
+                onClick={() => addToCart(product)}
                 className="btn btn-light p-0"
                 type="button"
                 // data-toggle="dropdown"

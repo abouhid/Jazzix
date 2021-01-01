@@ -290,6 +290,25 @@ nav a,
   grid-row-gap: 10px;
 }
 
+.cart-item {
+  display: flex;
+  border: 1px solid #d35266;
+  border-radius: 3px;
+  padding: 1%;
+  margin: 10px 0;
+  width: 45%;
+}
+
+.cart-item img {
+  margin-right: 3%;
+}
+
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .nav-right {
     display: flex;
@@ -399,4 +418,6 @@ nav a,
   nav ul li {
     font-size: 20px;
   }
+
+ 
 }
