@@ -2,7 +2,9 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
-import Details from './pages/SearchPage';
+import Wishlist from './pages/Wishlist';
+import Cart from './pages/Cart';
+import InstrumentCont from './components/InstrumentCont';
 
 function App() {
   return (
@@ -12,10 +14,14 @@ function App() {
         <Route exact path="/">
           <MainPage />
         </Route>
-        <Route path="/details">
-          <Details />
+        <Route path="/wishlist">
+          <Wishlist />
+        </Route>
+        <Route path="/cart">
+          <Cart />
         </Route>
       </Switch>
+      <InstrumentCont />
       <Footer />
     </div>
   );

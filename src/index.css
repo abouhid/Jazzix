@@ -133,7 +133,6 @@ a {
 nav {
   height: fit-content;
   background-color: #383838;
-  position: fixed;
   text-align: center;
   color: #888;
   padding: 1%;
@@ -164,7 +163,7 @@ nav a,
 }
 
 .p5 {
-  padding: 5%;
+  padding: 1%;
 }
 
 .mt4 {
@@ -172,13 +171,12 @@ nav a,
 }
 
 .p5 h1 {
-  font-size: 8vw;
-  margin: 3vw auto;
+  font-size: 6vw;
+  margin: 1vw auto;
 }
 
 .fs3 {
   font-size: 3vw;
-  font-family: "helvetica-bold", Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -257,7 +255,7 @@ nav a,
   align-self: center;
   padding: 6%;
   cursor: pointer;
-  max-height: 50%;
+  max-height: 80%;
 }
 
 .products li {

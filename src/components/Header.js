@@ -17,11 +17,11 @@ function Header() {
         <Link to="/">
           <li><div><i className="fa fa-home red"> HOME</i></div></li>
         </Link>
-        <Link to="/details">
-          <li><div>COLLECTIONS</div></li>
+        <Link to="/wishlist">
+          <li><div>WISHLIST</div></li>
         </Link>
-        <Link to="/details">
-          <li><div><i className="fa fa-shopping-cart"> PURCHASE LIST</i></div></li>
+        <Link to="/cart">
+          <li><div><i className="fa fa-shopping-cart"> YOUR CART</i></div></li>
         </Link>
 
       </ul>

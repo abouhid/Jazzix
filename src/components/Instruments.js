@@ -1,9 +1,12 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context';
+/* eslint-disable */
 
 const Instruments = props => {
-  const { storedata } = useContext(Context);
-  const list = storedata[props.id].instruments.map(product => (
+  const { allInstruments, addToCart } = useContext(Context);
+  const instrumentType = props.id
+ 
+  const list = allInstruments[props.id].instruments.map(product => (
     <li key={product.id}>
       <>
         <img
@@ -21,19 +24,20 @@ const Instruments = props => {
           <div className="d-flex justify-content-between align-items-center">
             <div className="dropdown size m-0">
               <button
+                onClick={()=>addToCart(product)}
                 className="btn btn-light p-0"
                 type="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                // data-toggle="dropdown"
+                // aria-haspopup="true"
+                // aria-expanded="false"
               >
-                <i className="fas fa-plus-square red fs3 font-weight-bold" />
+                <i className="fas fa-plus red fs3 font-weight-bold" />
               </button>
-              <div className="dropdown-menu border">
+              {/* <div className="dropdown-menu border">
                 <span className="dropdown-item">Add to Wishlist</span>
-                <span className="dropdown-item">Send a Message</span>
+                <span className="dropdown-item">Add to Cart</span>
                 <span className="dropdown-item">More Details</span>
-              </div>
+              </div> */}
             </div>
             <h4 className="red font-weight-bold fs3 m-0">
               <span className="red">

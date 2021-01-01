@@ -46,7 +46,7 @@ export default [
     description: '(Acoustic and electric guitars)',
     instruments: [
       {
-        id: 0,
+        id: 4,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/Pursuit-Exotic-Concerto-CE-Myrtlewood-Myrtlewood-Acoustic-Electric-Guitar-Cinnamon-Burst/L47817000001000-00-220x220.jpg',
         name: 'Breedlove Pursuit Exotic Concerto CE Myrtlewood-Myrtlewood...',
         state: 'New',
@@ -54,7 +54,7 @@ export default [
         price: 455.99,
       },
       {
-        id: 1,
+        id: 5,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/Premier-Series-EXL-1-Hollowbody-Electric-Guitar-with-Stairstep-Tailpiece-Black/J47122000001000-00-220x220.jpg',
         name: 'D\'Angelico Premier Series EXL-1 Hollowbody Electric Guitar...',
         state: 'Used',
@@ -62,7 +62,7 @@ export default [
         price: 379.99,
       },
       {
-        id: 2,
+        id: 6,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/Premier-CS-Series-Fulton-Grand-Auditorium-12-String-Acoustic-Electric-Guitar-Black/L54663000001000-00-220x220.jpg',
         name: 'D\'Angelico Premier CS Series Fulton Grand Auditorium...',
         state: 'New',
@@ -70,7 +70,7 @@ export default [
         price: 549.99,
       },
       {
-        id: 3,
+        id: 7,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/USA-Concerto-E-Sitka-Spruce-Mahogany-Acoustic-Electric-Guitar-Cinnamon-Burst/L72172000001000-00-220x220.jpg',
         name: 'Breedlove USA Concerto E Sitka Spruce-Mahogany...',
         state: 'New',
@@ -86,7 +86,7 @@ export default [
     description: '(Pianos and Musical Keyboards)',
     instruments: [
       {
-        id: 0,
+        id: 8,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/Overture-2-88-Key-Console-Digital-Piano/J17210000000000-00-220x220.jpg',
         name: 'Williams Overture 2 88-Key Console Digital Piano',
         state: 'New',
@@ -94,7 +94,7 @@ export default [
         price: 795.99,
       },
       {
-        id: 1,
+        id: 9,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/MDG-300-Black-Micro-Grand-Digital-Piano/J19268000000000-00-220x220.jpg',
         name: 'Williams Black Stand for Williams Legato Digital Pianos',
         state: 'Used',
@@ -102,7 +102,7 @@ export default [
         price: 879.99,
       },
       {
-        id: 2,
+        id: 10,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/CTP-88-Innovation-Digital-Piano/J14201000000000-00-220x220.jpg',
         name: 'Suzuki CTP-88 Innovation Digital Piano',
         state: 'New',
@@ -110,7 +110,7 @@ export default [
         price: 949.99,
       },
       {
-        id: 3,
+        id: 11,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/Allegro-III-Keyboard-Intro-Package/L48167000000000-00-220x220.jpg',
         name: 'Williams Allegro III Keyboard Intro Package',
         state: 'New',
@@ -126,7 +126,7 @@ export default [
     description: '(All types of trumpets.)',
     instruments: [
       {
-        id: 0,
+        id: 12,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/ETR-100-Series-Student-Bb-Trumpet-Lacquer/463676000420000-00-220x220.jpg',
         name: 'Etude ETR-100 Series Student Bb Trumpet',
         state: 'New',
@@ -134,7 +134,7 @@ export default [
         price: 455.99,
       },
       {
-        id: 1,
+        id: 13,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/GTR-300-Student-Bb-Trumpet/J47420000000000-00-220x220.jpg',
         name: 'Giardinelli GTR-300 Student Bb Trumpet',
         state: 'New',
@@ -142,7 +142,7 @@ export default [
         price: 579.99,
       },
       {
-        id: 2,
+        id: 14,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/ATR-450-Vienna-Series-Intermediate-Bb-Trumpet-Silver-plated/J50836000001000-00-220x220.jpg',
         name: 'Allora ATR-450 Vienna Series Intermediate Bb Trumpet',
         state: 'Used',
@@ -150,7 +150,7 @@ export default [
         price: 549.99,
       },
       {
-        id: 3,
+        id: 15,
         img: 'https://media.musiciansfriend.com/is/image/MMGS7/ETR-200-Series-Student-Bb-Trumpet-Lacquer/J50855000001000-00-220x220.jpg',
         name: 'Etude ETR-200 Series Student Bb Trumpet',
         state: 'New',

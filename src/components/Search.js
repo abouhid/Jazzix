@@ -4,7 +4,7 @@ function Search() {
   return (
     <>
       <section className="text-center p5 text-light bg-red header">
-        <h1 className="mt-5"> JAZZIX </h1>
+        <h1> JAZZIX </h1>
         <h4 className="fs3">Buying your instruments the way it should be done</h4>
 
         <ul className="d-flex justify-content-center mt-4">

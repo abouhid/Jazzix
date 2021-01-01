@@ -3,18 +3,18 @@ import Instruments from './Instruments';
 import { Context } from '../Context';
 
 function InstrumentCont() {
-  const { storedata } = useContext(Context);
+  const { allInstruments } = useContext(Context);
 
-  const lists = storedata.map(el => (
+  const lists = allInstruments.map(el => (
     <React.Fragment key={el.id}>
       <div className="d-flex align-items-baseline m-0 px-3">
         <h4 className="mt4 dark font-weight-bold fs3 title">
           <i className={el.icon} />
           {' '}
-          {storedata[el.id].name}
+          {allInstruments[el.id].name}
         </h4>
         <p className="mt4 ml-4 grey font-weight-bold m-0 fs2">
-          {storedata[el.id].description}
+          {allInstruments[el.id].description}
         </p>
       </div>
       <hr className="bg-grey mt-0" />
