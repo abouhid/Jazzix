@@ -2,7 +2,6 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
-import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
 import HotDeals from './components/HotDeals';
 
@@ -15,7 +14,8 @@ function App() {
           <MainPage />
         </Route>
         <Route path="/wishlist">
-          <Wishlist />
+          <Cart />
+          <HotDeals />
         </Route>
         <Route path="/cart">
           <Cart />

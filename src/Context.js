@@ -6,10 +6,14 @@ const Context = React.createContext();
 
 function ContextProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
+  const [wishlistItems, setWishlistItems] = useState([]);
   const [allInstruments] = useState(storedata);
 
   const addToCart = newItem => {
     setCartItems(prevItems => [...prevItems, newItem]);
+  };
+  const addToWishlist = newItem => {
+    setWishlistItems(prevItems => [...prevItems, newItem]);
   };
 
   const emptyCart = () => {
@@ -23,7 +27,7 @@ function ContextProvider({ children }) {
 
   return (
     <Context.Provider value={{
-      cartItems, addToCart, emptyCart, allInstruments, removeFromCart,
+      allInstruments, cartItems, addToCart, emptyCart, removeFromCart, wishlistItems, addToWishlist,
     }}
     >
       {children}

@@ -1,11 +1,14 @@
 import React, { useState, useContext } from 'react';
+import { useRouteMatch } from 'react-router-dom';
 import Modal from 'react-modal';
 import { Context } from '../Context';
 import CartItem from '../components/CartItem';
 
-function Cart() {
+const Cart = () => {
+  const { path } = useRouteMatch();
+  const isWishlist = path === '/wishlist';
   const [buttonText, setButtonText] = useState('Place Order');
-  const { cartItems, emptyCart } = useContext(Context);
+  const { cartItems, emptyCart, wishlistItems } = useContext(Context);
   const totalCost = cartItems.map(prod => prod.price).reduce((a, b) => a + b, 0);
   const totalCostDisplay = totalCost.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   const customStyles = {
@@ -41,9 +44,27 @@ function Cart() {
       openModal();
     }, 1000);
   }
-  const cartItemElements = cartItems.map(item => (
-    <CartItem key={item.id} item={item} />
+  const cartItemElements = cartItems.map((item, index) => (
+    <CartItem key={index.toString()} item={item} />
   ));
+
+  const wishlistElements = wishlistItems.map((item, index) => (
+    <CartItem key={index.toString()} item={item} />
+  ));
+
+  const ifCartElement = cartItems.length > 0
+    ? (
+      <div className="order-button text-center">
+        <p className="total-cost fs3 red">
+          Total:
+          {totalCostDisplay}
+        </p>
+        <hr />
+
+        <button type="button" className="order" onClick={placeOrder}>{buttonText}</button>
+      </div>
+    )
+    : <p>You have no items in your cart.</p>;
 
   return (
     <main className="cart-page p-3">
@@ -60,29 +81,19 @@ function Cart() {
       </Modal>
       <h1>
         {' '}
-        <i className="fa fa-shopping-cart"> YOUR CART</i>
+        {isWishlist ? <i className="fas fa-heart">YOUR WISHLIST</i> : <i className="fa fa-shopping-cart"> YOUR CART</i>}
+
       </h1>
       <ul>
+        {isWishlist ? wishlistElements : cartItemElements}
 
-        {cartItemElements}
       </ul>
       {
-      cartItems.length > 0
-        ? (
-          <div className="order-button text-center">
-            <p className="total-cost fs3 red">
-              Total:
-              {totalCostDisplay}
-            </p>
-            <hr />
+              isWishlist ? '' : ifCartElement
 
-            <button type="button" className="order" onClick={placeOrder}>{buttonText}</button>
-          </div>
-        )
-        : <p>You have no items in your cart.</p>
             }
     </main>
   );
-}
+};
 
 export default Cart;
