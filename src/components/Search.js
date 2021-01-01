@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Search() {
   return (
@@ -48,7 +49,9 @@ function Search() {
             <input className="form-control ml-2 " type="search" placeholder="Start rocking!" aria-label="Search" />
 
           </li>
-          <li className="size"><span className="btn btn-light ml-2">Search</span></li>
+          <Link to="/search">
+            <li className="size"><span className="btn btn-light ml-2">Search</span></li>
+          </Link>
         </ul>
 
       </section>

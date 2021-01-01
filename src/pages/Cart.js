@@ -81,7 +81,7 @@ const Cart = () => {
       </Modal>
       <h1>
         {' '}
-        {isWishlist ? <i className="fas fa-heart">YOUR WISHLIST</i> : <i className="fa fa-shopping-cart"> YOUR CART</i>}
+        {isWishlist ? <i className="fas fa-heart"> YOUR WISHLIST</i> : <i className="fa fa-shopping-cart"> YOUR CART</i>}
 
       </h1>
       <ul>

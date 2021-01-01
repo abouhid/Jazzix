@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 import Cart from './pages/Cart';
 import HotDeals from './components/HotDeals';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
@@ -21,9 +22,8 @@ function App() {
           <Cart />
           <HotDeals />
         </Route>
-        <Route path="/info/:productId">
-          <Cart />
-          <HotDeals />
+        <Route path="/search">
+          <SearchPage />
         </Route>
       </Switch>
       <Footer />

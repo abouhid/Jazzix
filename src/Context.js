@@ -21,7 +21,6 @@ function ContextProvider({ children }) {
   };
 
   const removeFromCart = id => {
-    console.log(id, cartItems);
     setCartItems(prevItems => prevItems.filter((item, index) => index != id));
   };
   const removeFromWishlist = id => {
