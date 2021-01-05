@@ -45,7 +45,7 @@ function HotDealsPage() {
           </div>
         </div>
         <p className="item-price fs3 red">
-          {instObj.price}
+          ${instObj.price}
         </p>
         <hr />
       </div>
