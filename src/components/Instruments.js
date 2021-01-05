@@ -17,7 +17,7 @@ const Instruments = props => {
           />
         </Link>
         <div>
-          <h4 className="font-weight-bold fs2"><span>{product.name}</span></h4>
+          <Link to={`/info/${product.id}`}><h4 className="font-weight-bold fs2"><span>{product.name}</span></h4></Link>
           <h5 className="red fs2">{product.state}</h5>
           <h5 className="fs2">
             <strong>From: </strong>
