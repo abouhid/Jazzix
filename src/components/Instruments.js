@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Context } from '../Context';
-
+/*eslint-disable */
 const Instruments = props => {
   const { allInstruments, addToCart, addToWishlist } = useContext(Context);
-
+  const { scrollTop } = props;
   const list = allInstruments[props.id].instruments.map(product => (
     <li key={product.id}>
+
       <>
         {' '}
         <Link to={`/info/${product.id}`}>
@@ -17,7 +18,7 @@ const Instruments = props => {
           />
         </Link>
         <div>
-          <Link to={`/info/${product.id}`}><h4 className="font-weight-bold fs2"><span>{product.name}</span></h4></Link>
+          <Link to={`/info/${product.id}`} onClick={scrollTop}><h4 className="font-weight-bold fs2"><span>{product.name}</span></h4></Link>
           <h5 className="red fs2">{product.state}</h5>
           <h5 className="fs2">
             <strong>From: </strong>

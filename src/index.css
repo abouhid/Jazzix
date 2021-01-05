@@ -313,17 +313,17 @@ nav a,
 }
 
 .info-item {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 6% auto 0 auto;
-    border: 1px solid #d35266;
-    border-radius: 3px;
-    padding: 3%;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 6% auto 0 auto;
+  border: 1px solid #d35266;
+  border-radius: 3px;
+  padding: 3%;
 }
 
-.info + p{
-  color:#888;
+.info + p {
+  color: #888;
   font-size: 16px;
   margin-bottom: 2%;
   overflow: hidden;
@@ -415,7 +415,6 @@ nav a,
   .wishlist {
     display: none;
   }
-
 
   .fs2 {
     font-size: 13px;

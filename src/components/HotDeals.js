@@ -36,7 +36,10 @@ function Search() {
                       Juiz de Fora, Brazil
                     </h5>
                     <div className="d-flex adsBut fs3">
-                      <button type="button">$450</button>
+                      <Link to="/hotdeals/0">
+                        <button type="button">$450</button>
+                      </Link>
+
                     </div>
 
                   </div>

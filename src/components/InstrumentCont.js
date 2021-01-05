@@ -1,12 +1,27 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import Instruments from './Instruments';
 import { Context } from '../Context';
 
 function InstrumentCont() {
   const { allInstruments } = useContext(Context);
+  const [showScroll, setShowScroll] = useState(false);
 
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', checkScrollTop);
   const lists = allInstruments.map(el => (
     <React.Fragment key={el.id}>
+
       <div className="d-flex align-items-baseline m-0 px-3">
         <h4 className="mt4 dark font-weight-bold fs3 title">
           <i className={el.icon} />
@@ -19,7 +34,7 @@ function InstrumentCont() {
       </div>
       <hr className="bg-grey mt-0" />
       <ul className="products px-3">
-        <Instruments id={el.id} />
+        <Instruments id={el.id} scrollTop={scrollTop} />
       </ul>
 
     </React.Fragment>
