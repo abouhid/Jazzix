@@ -6,6 +6,7 @@ import Cart from './pages/Cart';
 import HotDeals from './components/HotDeals';
 import SearchPage from './pages/SearchPage';
 import InfoPage from './pages/InfoPage';
+import HotDealsPage from './pages/HotDealsPage';
 
 function App() {
   return (
@@ -29,8 +30,8 @@ function App() {
         <Route path="/info/:productId">
           <InfoPage />
         </Route>
-        <Route path="/hotdeals/:hotDealsId">
-          <InfoPage />
+        <Route path="/hotdeals/:productId">
+          <HotDealsPage />
         </Route>
       </Switch>
       <Footer />

@@ -57,7 +57,7 @@ function Search() {
                       Wroclaw, Poland
                     </h5>
                     <div className="d-flex adsBut fs3">
-                      <button type="button">$450</button>
+                      <button type="button">$650</button>
                     </div>
                   </div>
                 </div>

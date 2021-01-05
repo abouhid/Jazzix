@@ -6,7 +6,7 @@ export default [
     name: 'Gibson Traditional Les Paul Premium Plus Wine Red',
     state: 'New',
     from: 'Juiz de Fora, Brazil',
-    price: 69.99,
+    price: 450,
   },
   {
     id: 1,
@@ -20,8 +20,8 @@ export default [
     id: 2,
     img: 'https://gloimg.gbtcdn.com/storage/item/6538088194642685952/15607/f6f43ac93373.jpg_100x100.jpg',
     name: 'Digital Piano vidaXL with 88-key Pedals Black Melamine Panel - Black France',
-    state: 'New',
+    state: 'Used',
     from: 'Wroclaw, Poland',
-    price: 39.99,
+    price: 650,
   },
 ];
