@@ -26,7 +26,10 @@ const SearchItems = () => {
           </div>
           <h4 className="red font-weight-bold fs3 m-0">
             {' '}
-            <span className="red">{prod.price}</span>
+            <span className="red">
+              $
+              {prod.price}
+            </span>
           </h4>
         </div>
       </div>

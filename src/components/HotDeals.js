@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Search() {
   return (
@@ -14,10 +15,16 @@ function Search() {
               <div className="carousel-item active ">
                 <div className="d-flex m-0">
                   <div className="col-3 p-0">
-                    <span className="img1 hotdeals" />
+                    <Link to="/hotdeals/0">
+
+                      <span className="img1 hotdeals" />
+                    </Link>
                   </div>
                   <div className="col-9 f-right ">
-                    <h4 className="font-weight-bold fs3">Gibson Traditional Les Paul Premium Plus Wine Red</h4>
+                    <Link to="/hotdeals/0">
+                      {' '}
+                      <h4 className="font-weight-bold fs3">Gibson Traditional Les Paul Premium Plus Wine Red</h4>
+                    </Link>
                     <h5 className="red fs2">New</h5>
                     <h6 className="fs2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente.
@@ -29,7 +36,10 @@ function Search() {
                       Juiz de Fora, Brazil
                     </h5>
                     <div className="d-flex adsBut fs3">
-                      <button type="button">$450</button>
+                      <Link to="/hotdeals/0">
+                        <button type="button">$450</button>
+                      </Link>
+
                     </div>
 
                   </div>
@@ -39,13 +49,18 @@ function Search() {
               <div className="carousel-item ">
                 <div className="d-flex m-0">
                   <div className="col-3 p-0">
-                    <span className="img2 hotdeals" />
+                    <Link to="/hotdeals/2">
+                      <span className="img2 hotdeals" />
+                    </Link>
                   </div>
                   <div className="col-9 f-right">
-                    <h4 className="font-weight-bold fs3">
-                      Digital Piano vidaXL with 88-key Pedals Black Melamine Panel - Black
-                      France
-                    </h4>
+                    <Link to="/hotdeals/2">
+                      <h4 className="font-weight-bold fs3">
+                        Digital Piano vidaXL with 88-key Pedals Black Melamine Panel - Black
+                        France
+                      </h4>
+                    </Link>
+
                     <h5 className="red fs2">Used</h5>
                     <h6 className="fs2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente.
@@ -57,7 +72,7 @@ function Search() {
                       Wroclaw, Poland
                     </h5>
                     <div className="d-flex adsBut fs3">
-                      <button type="button">$450</button>
+                      <button type="button">$650</button>
                     </div>
                   </div>
                 </div>
@@ -66,10 +81,12 @@ function Search() {
               <div className="carousel-item ">
                 <div className="d-flex m-0">
                   <div className="col-3 p-0">
-                    <span className="img3 hotdeals" />
+                    <Link to="/hotdeals/1">
+                      <span className="img3 hotdeals" />
+                    </Link>
                   </div>
                   <div className="col-9 f-right">
-                    <h4 className="font-weight-bold fs3">Mitchell MU75BK Concert Ukulele</h4>
+                    <Link to="/hotdeals/1"><h4 className="font-weight-bold fs3">Mitchell MU75BK Concert Ukulele</h4></Link>
                     <h5 className="red fs2">New</h5>
                     <h6 className="fs2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente.

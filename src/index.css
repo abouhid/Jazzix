@@ -127,7 +127,12 @@ a {
   cursor: pointer;
 }
 
-.pointer {
+.pointer,
+img,
+h3,
+p,
+i,
+h4 {
   cursor: pointer;
 }
 
@@ -294,6 +299,7 @@ nav a,
   background-color: white;
   height: 100%;
   justify-content: space-between;
+  text-align: center;
 }
 
 .left-footer {
@@ -310,6 +316,27 @@ nav a,
   padding: 10px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 6% auto 0 auto;
+  border: 1px solid #d35266;
+  border-radius: 3px;
+  padding: 3%;
+}
+
+.info + p {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 
 .cart-item {
@@ -394,7 +421,6 @@ nav a,
   .wishlist {
     display: none;
   }
-
 
   .fs2 {
     font-size: 13px;
