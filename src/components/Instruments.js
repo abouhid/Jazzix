@@ -5,11 +5,11 @@ import { Context } from '../Context';
 const Instruments = props => {
   const { allInstruments, addToCart, addToWishlist } = useContext(Context);
 
-  const list = allInstruments[props.id].instruments.map((product, index) => (
+  const list = allInstruments[props.id].instruments.map(product => (
     <li key={product.id}>
       <>
         {' '}
-        <Link to={`/${index}/${product.id}`}>
+        <Link to={`/info/${product.id}`}>
 
           <img
             src={product.img}

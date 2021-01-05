@@ -29,6 +29,9 @@ function App() {
         <Route path="/info/:productId">
           <InfoPage />
         </Route>
+        <Route path="/hotdeals/:hotDealsId">
+          <InfoPage />
+        </Route>
       </Switch>
       <Footer />
     </div>

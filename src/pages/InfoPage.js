@@ -18,11 +18,11 @@ function InfoPage() {
         style={{ width: '100px', height: '130px', margin: '10px 15px 10px 0px' }}
       />
 
-      <div className="flex-column w-100">
-        <h4 className="mb-3">
+      <div className="flex-column w-100 ">
+        <h3 className="mb-3 info fs3">
           {instObj.name}
           {' '}
-        </h4>
+        </h3>
         <LoremIpsum p={1} avgSentencesPerParagraph={4} />
 
         <h5 className="red fs2">

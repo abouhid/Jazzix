@@ -316,10 +316,21 @@ nav a,
     display: flex;
     justify-content: center;
     width: 50%;
-    margin: 0 auto;
+    margin: 6% auto 0 auto;
     border: 1px solid #d35266;
     border-radius: 3px;
-    padding: 1%;
+    padding: 3%;
+}
+
+.info + p{
+  color:#888;
+  font-size: 16px;
+  margin-bottom: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 
 .cart-item {
