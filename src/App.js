@@ -5,6 +5,7 @@ import MainPage from './pages/MainPage';
 import Cart from './pages/Cart';
 import HotDeals from './components/HotDeals';
 import SearchPage from './pages/SearchPage';
+import InfoPage from './pages/InfoPage';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/search">
           <SearchPage />
+        </Route>
+        <Route path="/:productType/:productId">
+          <InfoPage />
         </Route>
       </Switch>
       <Footer />

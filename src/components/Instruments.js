@@ -1,16 +1,21 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { Context } from '../Context';
 
 const Instruments = props => {
   const { allInstruments, addToCart, addToWishlist } = useContext(Context);
 
-  const list = allInstruments[props.id].instruments.map(product => (
+  const list = allInstruments[props.id].instruments.map((product, index) => (
     <li key={product.id}>
       <>
-        <img
-          src={product.img}
-          alt="product"
-        />
+        {' '}
+        <Link to={`/${index}/${product.id}`}>
+
+          <img
+            src={product.img}
+            alt="product"
+          />
+        </Link>
         <div>
           <h4 className="font-weight-bold fs2"><span>{product.name}</span></h4>
           <h5 className="red fs2">{product.state}</h5>
