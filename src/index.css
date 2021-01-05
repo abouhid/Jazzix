@@ -312,6 +312,16 @@ nav a,
   grid-row-gap: 10px;
 }
 
+.info-item {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #d35266;
+    border-radius: 3px;
+    padding: 1%;
+}
+
 .cart-item {
   display: flex;
   border: 1px solid #d35266;

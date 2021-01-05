@@ -12,6 +12,7 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
+    "react-lorem-ipsum": "^1.4.9",
     "react-modal": "^3.12.1",
     "react-native-admob-native-ads": "^0.3.9",
     "react-router-dom": "^5.2.0",

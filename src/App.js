@@ -26,7 +26,7 @@ function App() {
         <Route path="/search">
           <SearchPage />
         </Route>
-        <Route path="/:productType/:productId">
+        <Route path="/info/:productId">
           <InfoPage />
         </Route>
       </Switch>
