@@ -61,10 +61,10 @@ function Header() {
         </div>
         <hr className="bg-grey" />
 
-        <div className="grey text-center">
+        <div className="grey text-center mb-5">
           <h5 className="fs2">
             {' '}
-            © 2020 Jazzix.com. All Rights Reserved. Designed by Mohammed Awad. Adapted by Alexandre
+            © 2020 Jazzix.com. All Rights Reserved. Adapted by Alexandre
             Bouhid.
           </h5>
         </div>
