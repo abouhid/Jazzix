@@ -23,28 +23,34 @@ function Header() {
         <Link to="/wishlist">
           <li className="wishlist">
             <div>
-              <i className="fas fa-heart">
+              <i className="fa fa-heart" />
+              <span>
+
                 {' '}
-                WISHLIST
+                YOUR WISHLIST
                 {' '}
-                [
-                {wishlistItems.length}
-                ]
-              </i>
+                <span className="header-icon">
+                  {wishlistItems.length}
+
+                </span>
+              </span>
             </div>
           </li>
         </Link>
         <Link to="/cart">
           <li>
             <div>
-              <i className="fa fa-shopping-cart">
+              <i className="fa fa-shopping-cart" />
+              <span>
+
                 {' '}
                 YOUR CART
                 {' '}
-                [
-                {cartItems.length}
-                ]
-              </i>
+                <span className="header-icon">
+                  {cartItems.length}
+
+                </span>
+              </span>
             </div>
           </li>
         </Link>

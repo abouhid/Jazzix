@@ -214,6 +214,18 @@ nav a,
   background-image: linear-gradient(rgb(211, 82, 102, 0.5) 60%, rgb(56, 56, 56)), url(https://cdn2.vectorstock.com/i/1000x1000/50/61/jazz-seamless-background-vector-1445061.jpg);
 }
 
+.header-icon {
+  background-color: #d35266;
+  color: white;
+  border-radius: 5px;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 11px;
+  top: 5px;
+  right: 7px;
+  position: relative;
+}
+
 .header h1,
 .header h4 {
   text-shadow: 2px 2px #383838;
@@ -328,7 +340,7 @@ nav a,
   padding: 3%;
 }
 
-.info-item img{
+.info-item img {
   width: 100px;
   max-height: 60%;
   margin: 10px;
@@ -414,12 +426,11 @@ nav a,
   }
 }
 
-@media screen and (min-width: 425px) and (max-width:767px){
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .info-item {
     margin: 12% auto 0 auto;
   }
 }
-
 
 @media screen and (max-width: 424px) {
   .fs3 {
