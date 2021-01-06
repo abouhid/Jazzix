@@ -46,7 +46,10 @@ function CartItem({ item, isWishlist, id }) {
             <span aria-hidden="true" onClick={() => addToCart(item)} className="dropdown-item">Add to Cart</span>
           </div>
         </div>
-        <p className="item-price fs3 red">{item.price}</p>
+        <p className="item-price fs3 red">
+          $
+          {item.price}
+        </p>
 
         <hr />
       </div>

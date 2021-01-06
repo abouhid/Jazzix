@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Context } from '../Context';
-/*eslint-disable */
+
 const Instruments = props => {
   const { allInstruments, addToCart, addToWishlist } = useContext(Context);
   const { scrollTop } = props;
+
   const list = allInstruments[props.id].instruments.map(product => (
     <li key={product.id}>
 
