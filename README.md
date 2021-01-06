@@ -11,6 +11,7 @@ In this website you are able to:
 - Add items to your Wishlist;
 - Place an order;
 - Fake search for instruments;
+- Check the instruments details;
 
 ![screenshot](./src/images/screenshot.png)
 
