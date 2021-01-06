@@ -23,7 +23,7 @@ function Header() {
         <Link to="/wishlist">
           <li className="wishlist">
             <div>
-              <i className="fa fa-shopping-cart">
+              <i className="fas fa-heart">
                 {' '}
                 WISHLIST
                 {' '}

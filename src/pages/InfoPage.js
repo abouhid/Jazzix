@@ -1,15 +1,13 @@
-/*eslint-disable */
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { Context } from '../Context';
-
+/*eslint-disable */
 function InfoPage() {
   const { allInstruments, addToCart, addToWishlist } = useContext(Context);
   const { productId } = useParams();
-  const typeObj = allInstruments.find(product => product.instruments.find(inst=>inst.id==productId));
+  const typeObj = allInstruments.find(product => product.instruments.find(inst => inst.id == productId));
   const instObj = typeObj.instruments.find(inst => inst.id == productId);
-  console.log(instObj);
   return (
     <div className="info-item">
       <img
@@ -45,7 +43,8 @@ function InfoPage() {
           </div>
         </div>
         <p className="item-price fs3 red">
-          ${instObj.price}
+          $
+          {instObj.price}
         </p>
         <hr />
       </div>

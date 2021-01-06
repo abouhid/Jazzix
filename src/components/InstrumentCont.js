@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import Instruments from './Instruments';
 import { Context } from '../Context';
 
-function InstrumentCont() {
+const InstrumentCont = () => {
   const { allInstruments } = useContext(Context);
   const [showScroll, setShowScroll] = useState(false);
 
@@ -43,6 +43,6 @@ function InstrumentCont() {
   return (
     [lists]
   );
-}
+};
 
 export default InstrumentCont;

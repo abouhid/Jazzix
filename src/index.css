@@ -321,11 +321,17 @@ nav a,
 .info-item {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 80%;
   margin: 6% auto 0 auto;
   border: 1px solid #d35266;
   border-radius: 3px;
   padding: 3%;
+}
+
+.info-item img{
+  width: 100px;
+  max-height: 60%;
+  margin: 10px;
 }
 
 .info + p {
@@ -408,6 +414,13 @@ nav a,
   }
 }
 
+@media screen and (min-width: 425px) and (max-width:767px){
+  .info-item {
+    margin: 12% auto 0 auto;
+  }
+}
+
+
 @media screen and (max-width: 424px) {
   .fs3 {
     font-size: 15px;
@@ -416,6 +429,10 @@ nav a,
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+  }
+
+  .info-item {
+    margin: 12% auto 0 auto;
   }
 
   .wishlist {
