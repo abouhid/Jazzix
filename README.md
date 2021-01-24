@@ -4,7 +4,7 @@
 # Jazzix
 
 This React project was created based on a previous Capstone Project from the Microverse Program (https://github.com/abouhid/HTML-CSS-Capstone-Project).
-The whole concept of it is developing the back-end code for a front-end I created 6 months before, training how to work with a legacy. 
+The whole concept of it is developing with React a front-end I created 6 months before, training how to work with a legacy. 
 It is supposed to simulate a Shopping website for musical instruments.
 In this website you are able to: 
 - Add items to your Cart;
